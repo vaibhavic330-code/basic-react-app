@@ -1,22 +1,18 @@
 import "./Products.css";
+import Price from "./Price";
 
-function Products({ title, price}) {
-  if (price > 3000) {
+function Products({ title }) {
+
     return (
-      <div className="Product">
-        <h3>{title}</h3>
-        <h5>Price: {price}</h5>
-        <p>Discount of 5%</p>
+      <div className="Products">
+        <h4></h4>
+        <p>Title</p>
+        <p>Descripton</p>
+        <price />
       </div>
-    );
-  } else {
-    return (
-      <div className="Product">
-        <h3>{title}</h3>
-        <h5>Price: {price}</h5>
-      </div>
+
     );
   }
-}
+
 
 export default Products;
